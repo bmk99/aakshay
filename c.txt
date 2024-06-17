@@ -1,0 +1,592 @@
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+jksgfsdkjhgjksdlfjkgsdk
+
+
+
+.home-left h1 {
+  color: #00008B; /* Set the color to dark blue */
+  font-size: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 100px;
+
+}
+
+.home-left p {
+  color: gray;
+  font-size: 23px;
+  margin-right: 100px;
+  margin-left: 100px;
+
+}
+.home-left  {
+  max-width: 50%; /* Take up to 50% width of the container */
+  text-align: left; /* Align content to the left */
+}
+
+
+.home-left-button {
+  margin-left: 100px;
+  margin-top: 50px;
+  font-size: 20px;
+  border-radius: 45%;
+  padding: 18px;
+  color: #00008B; /* Dark blue text color */
+  background-color: transparent; /* Transparent background */
+  border: 2px solid #00008B; /* Dark blue border */
+  cursor: pointer; /* Cursor on hover */
+  font-size: bold;
+}
+
+.home-left-button:hover {
+  background-color: #00008B; /* Dark blue background color on hover */
+  color: white; /* White text color on hover */
+}  
+
+.home-image {
+  width: 100%; /* Ensure image fills its container */
+  max-width: 500px; /* Set maximum width for the image */
+  height: auto;
+  animation: moveUpDown 2s infinite alternate ease-in-out; /* Animation added */
+  margin-right: 100px;
+  margin-top: 50px;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-20px); /* Adjust value as needed */
+  }
+}
+
+
+.home-back-images {
+  background-color: whitesmoke;
+  padding-bottom: 20px;
+  padding-left: 20px; /* Increase padding-left to move images to the right */
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 20px;
+
+}
+
+
+/* Adjust margin for the first image */
+.home-image1 {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+  margin-left: 100px;
+}
+.home-back-images img:first-child {
+  margin-left: 5px;
+  margin-right: 1px;
+  text-align: center;
+}
+
+
+.home-back-images img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+.home-back-images img:first-child {
+  margin-left: 100px;
+}
+.home-back-images img:hover {
+  filter: grayscale(0%);
+}
+
+
+
+
+
+
+.about-container {
+  display: flex; /* Use flexbox for the layout */
+  justify-content: space-between; /* Distribute space between the items */
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px; /* Optional: Add some space between the items */
+  padding: 20px; /* Add padding for better spacing */
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.about-left-side
+{
+  width: 48%; /* Adjust the width as needed to fit side by side */
+  padding: 5px; /* Add padding for better spacing */
+  font-family: Arial, sans-serif; /* Set a default font family */
+  font-size: 16px; /* Set a default font size */
+  line-height: 1.6; /* Improve readability with line height */
+  border-radius: 5px; /* Slightly round the corners */
+  text-align: left;
+  margin-left: 100px;
+  margin-right: 30px;
+}
+.about-left-side i{
+  margin-right: 10px;
+
+  color: #00008B;
+}
+.about-left-side p{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+}
+
+
+.about-right-side {
+  width: 48%; /* Adjust the width as needed to fit side by side */
+  padding: 5px; /* Add padding for better spacing */
+  font-family: Arial, sans-serif; /* Set a default font family */
+  font-size: 16px; /* Set a default font size */
+  line-height: 1.6; /* Improve readability with line height */
+  border-radius: 5px; /* Slightly round the corners */
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+.about-right-button {
+  margin-top: 20px; /* Add some space above the button */
+  padding: 16px; /* Button padding */
+  font-size: 18px; /* Font size for the button */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Slightly round the corners */
+  cursor: pointer; /* Change cursor on hover */
+  border-radius: 35%;
+  border: 2px solid #00008B; /* Dark blue border */
+
+}
+
+.about-right-button:hover {
+  background-color: #00008B; /* Dark blue background color on hover */
+  color: white; /* White text color on hover */
+
+}
+  
+
+.home-left-button {
+  margin-left: 100px;
+  margin-top: 50px;
+  font-size: 18px;
+  border-radius: 45%;
+  padding: 18px;
+  color: #00008B; /* Dark blue text color */
+  background-color: transparent; /* Transparent background */
+  border: 2px solid #00008B; /* Dark blue border */
+  cursor: pointer; /* Cursor on hover */
+}
+
+  
+.section-about {
+  display: flex;
+  justify-content: left; /* Center the image horizontally */
+  margin-top: 0px;
+  margin-left: 100px; /* Adjust margin as needed */
+}
+
+.section-about img {
+  width: 500px; /* Set image width */
+  height: 500px; /* Maintain aspect ratio */
+  border-radius: 50%;
+}
+
+.count-box i{
+  border: #00008B;
+  font-size: 36px;
+  margin-right:100px ;
+  margin-left: 100px;
+  color: #00008B;
+  text-align: left;
+  margin-top: 300px;
+
+}
+.count-box {
+  margin-left: 10px;
+  margin-top: 100px;
+  margin-right: 100px;
+  font-size: 20px;
+}
+
+
+
+.services {
+  padding: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+
+
+
+
+
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between columns */
+  justify-content: space-between;
+  background-color: white;
+}
+
+.service-row {
+  flex: 1 1 calc(20% - 20px); /* Adjust width to fit three columns with gap */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #f9f9f9; /* Optional: add background for visual separation */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add shadow for visual separation */
+  box-sizing: border-box; /* Ensure padding is included in the width calculation */
+  padding-left: 10px;
+height: 400px;
+margin-right: 30px;
+border-radius: 3%;
+}
+
+.service-row:hover {
+  background-color:#00008B; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+
+.service-row:hover i {
+  background-color: white; /* Change icon background color on hover */
+  color:#00008B; /* Change icon color on hover */
+}
+
+
+.service-row i {
+  font-size: 24px;
+  margin-bottom: 10px;
+  background-color: #fff; /* Background color for the circle */
+  border: 2px solid #ccc; /* Optional: border color for the circle */
+  border-radius: 50%; /* Make the icon background a circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px; /* Diameter of the circle */
+  height:30px; /* Diameter of the circle */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 35px; /* Optional: shadow for the circle */
+  background-color: #00008B;
+  color: white;
+  padding:12px ;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.service-row h3 {
+  margin: 0;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.service-row p {
+  margin: 0;
+  margin-left: 20px;
+  text-align: left; /* Align content to the left */
+  font-size: 16px;
+  text-align: left;
+  padding-top: 10px;
+  padding-right: 30px;
+}
+
+
+
+.process-title {
+  display: flex;
+  align-items: center; /* Vertically center align items */
+  justify-content: center; /* Horizontally center align items */
+}
+.services-title {
+  display: flex;
+  align-items: center; /* Vertically center align items */
+  justify-content: center; /* Horizontally center align items */
+}
+
+.about-title {
+  display: flex;
+  align-items: center; /* Vertically center align items */
+  justify-content: center; /* Horizontally center align items */
+  margin-top: 100px;
+}
+.features-title {
+  display: flex;
+  align-items: center; /* Vertically center align items */
+  justify-content: center; /* Horizontally center align items */
+  margin-top: 100px;
+}
+
+
+
+.horizontal-line {
+  border-top: 2px solid black; /* Adjust thickness and color as needed */
+  width: 5%; /* Adjust width as needed */
+  margin: 10px; /* Add margin for spacing */
+  color: #00008B;
+}
+
+
+
+
+
+
+
+
+
+.purecounter {
+  font-size: 28px; /* Adjust counter font size */
+  color: #000; /* Adjust counter color */
+}
+
+
+.process {
+  padding: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+
+.process-text{
+  text-align: center;
+  font-size: 18px;
+}
+.process-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between rows and columns */
+}
+
+.process-row {
+  flex: 1 1 calc(50% - 40px); /* Adjust width to fit two columns with gap, accounting for margins */
+  background: #f9f9f9; /* Optional: add background for visual separation */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0); /* Optional: add shadow for visual separation */
+  box-sizing: border-box; /* Ensure padding is included in the width calculation */
+  margin-top: 100px;
+  height: 200px;
+  margin-right: 30px;
+  border-radius: 10px;
+  width: 300px;
+  
+}
+
+.process-row:hover {
+  background-color:#00008B; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+
+.process-row h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.process-row p {
+  margin: 0;
+  font-size: 16px;
+text-align: left;
+margin-left: 20px;
+margin-right:20px ;
+margin-top: 20px;
+}
+
+
+.features {
+  padding-top: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between columns */
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding-top: 20px;
+}
+
+
+.features-text{
+  text-align: left;
+  font-size: 16px;
+}
+.features-box {
+  flex: 1 1 calc(20% - 20px); /* Adjust width to fit columns with gap */
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+  background: #f9f9f9; /* Optional: add background for visual separation */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add shadow for visual separation */
+  box-sizing: border-box; /* Ensure padding is included in the width calculation */
+  margin-right: 15px;
+}
+.features-box a {
+  text-decoration: none;
+  color: inherit; /* This ensures the link inherits the color of its parent */
+}
+
+
+.features-box i {
+  margin-right: 5px; /* Space between icon and text */
+  font-size: 32px;
+  margin-left: 10px;
+}
+.ri-code-box-line{
+  color: #5578ff;
+}
+
+.ri-window-line{
+  color: #ffbb2c;
+}
+
+.ri-creative-commons-by-line{
+  color:red;
+}
+
+.ri-play-circle-line{
+  color:#e361ff;
+}
+.ri-search-eye-line{
+  color: rgb(42, 194, 245);
+
+}
+.ri-todo-line{
+  color:  #ffa76e;
+
+}
+.ri-map-pin-line{
+  color: #dbce11;
+
+}
+.ri-bar-chart-grouped-line{
+  color: blue;
+}
+.ri-contacts-book-line{
+  color:#b2904f;
+
+}
+.ri-disc-line{
+  color:#b20969;
+
+}
+
+.ri-calendar-event-line{
+  color: orangered;
+
+}
+.ri-advertisement-fill{
+  color: #29cc61;
+}
+
+
+.contact{
+  margin-top: 150px;
+}
+
+.contact-container {
+  display: flex;
+  background-color:white; /* Light grey background for the first part */
+  text-align: left;
+  margin-left: 100px;
+  margin-right: 100px;
+
+
+}
+
+.contact-page p{
+  font-size: 16px;
+  margin-right: 30px;
+  
+
+}
+
+
+.contact-info i{
+  font-size: 30px;
+  color: #00008B;
+
+}
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 100px;
+  margin-left: -15%;
+}
+.contact-info p{
+  font-size: 16px;
+}
+
+.contact-details{
+  margin-right: 170px;
+}
+
+/* ContactForm.css */
+.contact-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-form-input {
+  width: 280%;
+  padding: 10px;
+  border: 1px solid #ccc;
+
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-left: -200%;
+}
+
+.contact-form-textarea {
+  width: 285%;
+  padding: 5px;
+  border: 1px solid #ccc;
+
+  font-size: 16px;
+  height: 100px;
+  margin-bottom: 15px;
+  margin-left: -200%;
+}
+
+.contact-form-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+ margin-left: -140px;
+}
+
+.contact-form-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+

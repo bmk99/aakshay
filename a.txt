@@ -1,0 +1,448 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-image {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 100px;
+  }
+  
+  .nav-name {
+    font-size: 2em;
+    color: #00008B; /* Set the color to dark blue */
+  }
+  
+  .right-section {
+    display: flex;
+    align-items: center;
+    margin-right: 150px;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-list li {
+    margin-left: 20px;
+  }
+  
+  .nav-list li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2em;
+  }
+  
+  .nav-list li a:hover {
+    color: #007BFF;
+  }
+  
+  .home-left h1 {
+    color: #00008B; /* Set the color to dark blue */
+    font-size: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+  }
+  
+  .home-left p {
+    color: gray;
+    font-size: 25px;
+    margin-right: 100px;
+    margin-left: 100px;
+
+  }
+
+  .home-left {
+    max-width: 50%; /* Take up to 50% width of the container */
+    text-align: left; /* Align content to the left */
+  }
+  
+  
+  .home-left-button {
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 18px;
+    border-radius: 45%;
+    padding: 18px;
+    color: #00008B; /* Dark blue text color */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #00008B; /* Dark blue border */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .home-left-button:hover {
+    background-color: #00008B; /* Dark blue background color on hover */
+    color: white; /* White text color on hover */
+  }  
+
+  .home-image {
+    width: 100%; /* Ensure image fills its container */
+    max-width: 400px; /* Set maximum width for the image */
+    height: auto;
+    animation: moveUpDown 2s infinite alternate ease-in-out; /* Animation added */
+  }
+  
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-20px); /* Adjust value as needed */
+    }
+  }
+
+
+  .back-images {
+    background-color: whitesmoke;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px; /* Increase padding-left to move images to the right */
+  }
+  
+  .back-images {
+    margin-right: 20px; /* Add margin between images */
+  }
+  
+  /* Adjust margin for the first image */
+  image:first-child {
+    margin-left: 10px; /* Remove margin for the first image */
+  }
+
+  
+  
+
+  .about-container {
+    display: flex; /* Use flexbox for the layout */
+    justify-content: space-between; /* Distribute space between the items */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Optional: Add some space between the items */
+    padding: 20px; /* Add padding for better spacing */
+    box-sizing: border-box; /* Ensure padding is included in the width and height */
+  }
+  
+  .about-left-side,
+  .about-right-side {
+    width: 48%; /* Adjust the width as needed to fit side by side */
+    padding: 5px; /* Add padding for better spacing */
+    font-family: Arial, sans-serif; /* Set a default font family */
+    font-size: 16px; /* Set a default font size */
+    line-height: 1.6; /* Improve readability with line height */
+    border-radius: 5px; /* Slightly round the corners */
+    text-align: left;
+    margin-left: 100px;
+    margin-right: 30px;
+  }
+  
+  .about-right-button {
+    margin-top: 20px; /* Add some space above the button */
+    padding: 16px; /* Button padding */
+    font-size: 18px; /* Font size for the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Slightly round the corners */
+    cursor: pointer; /* Change cursor on hover */
+    border-radius: 40%;
+    border: 2px solid #00008B; /* Dark blue border */
+
+  }
+  
+  .about-right-button:hover {
+    background-color: #00008B; /* Dark blue background color on hover */
+    color: white; /* White text color on hover */
+
+  }
+    
+
+  .home-left-button {
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 18px;
+    border-radius: 45%;
+    padding: 18px;
+    color: #00008B; /* Dark blue text color */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #00008B; /* Dark blue border */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+    
+  .section-about {
+    display: flex;
+    justify-content: left; /* Center the image horizontally */
+    margin-top: 0px;
+    margin-left: 100px; /* Adjust margin as needed */
+  }
+  
+  .section-about img {
+    width: 500px; /* Set image width */
+    height: 400px; /* Maintain aspect ratio */
+    border-radius: 50%;
+  }
+
+
+  
+
+
+  .services-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between; /* Distribute items evenly with space between */
+  }
+  
+  .services-container > .services-content:first-child {
+    margin-left: 20px; /* Add left margin */
+  }
+  
+  .services-container > .services-content:nth-child(2) {
+    margin-right: 200px;
+  }
+  
+  .services-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px; /* Limit width of each section */
+    margin-bottom: 20px; /* Adjust margin between sections */
+  }
+  
+  .services-content img {
+    width: 100px; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image round */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  .services-content h2 {
+    font-size: 20px; /* Adjust heading size as needed */
+    margin-bottom: 10px; /* Adjust margin below heading */
+  }
+  
+  .services-content p {
+    font-size: 16px; /* Adjust paragraph size as needed */
+    text-align: center; /* Center text */
+  }
+  
+  .vertical-line {
+    border-left: 2px solid black; /* Adjust thickness and color as needed */
+    height: 100%; /* Make the vertical line same height as the container */
+    margin: 0 20px; /* Adjust margin between sections */
+  }
+  
+  /* Adjust margin for vertical line on smaller screens */
+  @media screen and (max-width: 768px) {
+    .vertical-line {
+      margin: 20px 0; /* Adjust margin for smaller screens */
+    }
+  }
+  
+
+.js:
+// import React from 'react';
+// import './Home.css';  // Import the CSS file
+
+// function Home() {
+//   return (
+//     <div>
+//     <div className="container">
+//       <div className="left-section">
+//         <img src="https://akeshya.com/assets/img/logo.png" alt="Profile" className="profile-image" />
+//         <h1 className="nav-name">AKESHYA</h1>
+//       </div>
+//       <div className="right-section">
+//         <ul className="nav-list">
+//           <li><a href="#home">Home</a></li>
+//           <li><a href="#about">About</a></li>
+//           <li><a href="#services">Services</a></li>
+//           <li><a href="#contact">Contact</a></li>
+//         </ul>
+//       </div>
+
+//     </div>
+//     <section className="home">
+//       <div className="container home-container">
+//         <div className="home-left">
+//           <h1>Grow your business with Akeshya</h1>
+//           <p>We are a team of talented website designers, developers & digital marketeers.</p>
+//           <button className='home-left-button'>Get Started</button>
+//         </div>
+
+
+//         <div className='home-rigt'>
+//         <img src="https://akeshya.com/assets/img/hero-img.png" alt="Profile" className="home-image" />
+
+
+//         </div>
+//       </div>
+//     </section>
+
+//     </div>
+//   );
+// }
+
+// export default Home;
+import React from 'react';
+import './Home.css';  // Import the CSS file
+
+
+function Home() {
+  return (
+    <div>
+      <div className="container">
+        <div className="left-section">
+          <img src="https://akeshya.com/assets/img/logo.png" alt="Profile" className="profile-image" />
+          <h1 className="nav-name">AKESHYA</h1>
+        </div>
+        <div className="right-section">
+          <ul className="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <section className="home">
+        <div className="container home-container">
+          <div className="home-left">
+            <h1>Grow your business with Akeshya</h1>
+            <p>We are a team of talented website designers, developers & digital marketeers.</p>
+            <button className="home-left-button">Get Started</button>
+          </div>
+          <div className="home-right">
+            <img src="https://akeshya.com/assets/img/hero-img.png" alt="Profile" className="home-image" />
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <div className='back-images'>
+        <img src="https://akeshya.com/assets/img/clients/client-1.png" alt="Profile" className="profile-image" />
+        <img src="https://akeshya.com/assets/img/clients/client-2.png" alt="Profile" className="profile-image" />
+        <img src="https://akeshya.com/assets/img/clients/client-3.png" alt="Profile" className="profile-image" />
+        <img src="https://akeshya.com/assets/img/clients/client-4.png" alt="Profile" className="profile-image" />
+        <img src="https://akeshya.com/assets/img/clients/client-5.png" alt="Profile" className="profile-image" />
+
+        <img src="https://akeshya.com/assets/img/clients/client-6.png" alt="Profile" className="profile-image" />
+
+          
+
+        </div>
+      </section>
+
+
+      <section>
+      <div
+        style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}
+      >
+        <div style={{flex: 2, height: '2px', backgroundColor: 'black'}} />
+<hr></hr>
+        <div>
+          <p style={{width: '70px', textAlign: 'center'}}>ABOUT US</p>
+        </div>
+
+        <div style={{flex: 2, height: '1px', backgroundColor: 'black'}} />
+      </div>
+        <div className='about-container'>
+
+          <div className='about-left-side'>
+            <p>We are Akeshya, a firm that specializes in web design and marketing. We help transform ideas into reality with a team of passionate graphic designers, web developers, and seasoned marketing advisors.
+
+</p>
+<p>We started with a simple idea: do what is best for the client.
+</p>
+<p>Our methodical and individual approach to each project delivers the finest possible results for your media.
+</p>
+<p>Our day-to-day work is to solve your problems utilising the most up-to-date, practical adaptive technology, and we have a lot of fun doing it.
+</p>
+
+          </div>
+          <div  className='about-right-side'>
+            <p>We're professional, but we're also friendly, and we'll always pay attention to your concerns. We expect to work with innovative people that have an open mind and are dedicated to making every idea a reality. We want to hear from you if you're interested in SEO, have Web Development ideas, or require a graphic designer who can match your goals.
+
+</p>
+<button className="about-right-button">Learn More</button>
+
+          </div>
+
+
+        </div>
+      </section>
+
+      <section className='koti'>
+      <div className="section-about">
+          <img src="https://akeshya.com/assets/img/counts-img.svg" alt="Profile"  />
+        </div>
+      </section>
+
+
+<section className='services'>
+  <div className='seveices-container'>
+<h1>-------------SERVICES----------------
+</h1>
+<p>Akeshya will serve as your consultant and development partner to help you turn your idea into a reality.
+
+</p>
+    </div>
+    <div className="services-container">
+  <div className='services-content'>
+    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfffYMkOGKgev-eem1MfCjlXAbQnbX51-rIljBZILu6hg-3XFj" alt="Profile" className="services-image" />
+    <h2>Design</h2>
+    <p>
+      Our web design services can assist you in reclaiming your company's online image. Your business will flourish on the Internet thanks to the combination of style and technology we provide, as well as our experience.
+    </p>
+  </div>
+  <div className='vertical-line'></div>
+  
+  <div className='services-content'>
+    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXoYcki0nUwvENxvmc6uMckwCwYdP6lS8BrRjPETndPTP8RRLt" alt="Profile" className="services-image" />
+    <h2>Development</h2>
+    <p>
+      Our development team can construct platforms to help your business thrive by creating powerful customised solutions tailored to your particular requirements. Akeshya makes use of established and effective web development tools.
+    </p>
+  </div>
+</div>
+
+<div className="services-container">
+  <div className='services-content'>
+    <img src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmecAp2-o45rYBBxr7bHnAo7ODtAUd-nfQ6t56c8mFwnJlDXK9' className='services-image'/>
+    <h2>Marketing</h2>
+    <p>
+      A beautiful website is the foundation of effective marketing. Our customers achieve success where it counts—in the real world—by combining our proven approach with our passion for improving conversions and increasing ROI.
+    </p>
+  </div>
+  <div className='vertical-line'></div>
+  
+  <div className='services-content'>
+    <img src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmecAp2-o45rYBBxr7bHnAo7ODtAUd-nfQ6t56c8mFwnJlDXK9' alt="Profile" className='services-image'/>
+    <h2>Support</h2>
+    <p> 
+      Since the beginning, we at Akeshya have specialised in website maintenance. We recognise the significance of having your business online 24 hours a day, seven days a week, and we've created a system to ensure that we're always available.
+    </p>
+  </div>
+</div>
+    
+
+</section>
+      
+
+
+
+    </div>
+
+  );
+}
+
+export default Home;

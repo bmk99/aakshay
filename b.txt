@@ -1,0 +1,852 @@
+  import React from 'react';
+import './Home.css';  // Import the CSS file
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import { useNavigate } from 'react-router-dom';
+
+function Home() {
+  const navigate = useNavigate();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    navigate('/success');
+  };
+
+  return (
+    <div>
+       <div className="container">
+        
+        <div className="left-section">
+          <img src="https://akeshya.com/assets/img/logo.png" alt="Profile" className="profile-image" />
+          <h1 className="nav-name">AKESHYA</h1>
+        </div>
+        <div className="right-section">
+          <ul className="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <section id="home" className="home">
+        <div className="container home-container">
+          <div className="home-left">
+            <h1>Grow your business with Akeshya</h1>
+            <p>We are a team of talented website designers, developers & digital marketeers.</p>
+            <button className="home-left-button">Get Started</button>
+          </div>
+          <div className="home-right">
+            <img src="https://akeshya.com/assets/img/hero-img.png" alt="Profile" className="home-image" />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className='home-back-images'>
+          <img src="https://akeshya.com/assets/img/clients/client-1.png" alt="Client 1" className="home-image1" />
+          <img src="https://akeshya.com/assets/img/clients/client-2.png" alt="Client 2" className="home-image1" />
+          <img src="https://akeshya.com/assets/img/clients/client-3.png" alt="Client 3" className="home-image1" />
+          <img src="https://akeshya.com/assets/img/clients/client-4.png" alt="Client 4" className="home-image1" />
+          <img src="https://akeshya.com/assets/img/clients/client-5.png" alt="Client 5" className="home-image1" />
+          <img src="https://akeshya.com/assets/img/clients/client-6.png" alt="Client 6" className="home-image1" />
+        </div>
+      </section>
+
+      <section id="about">
+        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+          <div style={{ flex: 2, height: '2px', backgroundColor: 'black' }} />
+          <div>
+            <p style={{ width: '70px', textAlign: 'center' }}>ABOUT US</p>
+          </div>
+          <div style={{ flex: 2, height: '1px', backgroundColor: 'black' }} />
+        </div>
+        <div className='about-container'>
+          <div className='about-left-side'>
+            <p>
+              We are Akeshya, a firm that specializes in web design and marketing. We help transform ideas into reality with a team of passionate graphic designers, web developers, and seasoned marketing advisors.
+            </p>
+            <p>We started with a simple idea: do what is best for the client.</p>
+            <p>Our methodical and individual approach to each project delivers the finest possible results for your media.</p>
+            <p>Our day-to-day work is to solve your problems utilizing the most up-to-date, practical adaptive technology, and we have a lot of fun doing it.</p>
+          </div>
+          <div className='about-right-side'>
+            <p>We're professional, but we're also friendly, and we'll always pay attention to your concerns. We expect to work with innovative people that have an open mind and are dedicated to making every idea a reality. We want to hear from you if you're interested in SEO, have Web Development ideas, or require a graphic designer who can match your goals.</p>
+            <button className="about-right-button">Learn More</button>
+          </div>
+        </div>
+      </section>
+
+      <section className='about'>
+        <div className="section-about">
+          <img src="https://akeshya.com/assets/img/counts-img.svg" alt="About Us" className='about-image' />
+          <div className="count-box-container">
+            <div className="count-box">
+              <i className="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="3835039" data-purecounter-duration="2" className="purecounter"></span>
+              <p><strong>Organic Reach</strong> (Global)</p>
+            </div>
+            <div className="count-box">
+              <i className="bi bi-clock"></i>
+              <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="3" className="purecounter"></span>
+              <p><strong>Campaigns</strong></p>
+            </div>
+          </div>
+          <div className="count-box-container">
+            <div className="count-box">
+              <i className="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="14081" data-purecounter-duration="3" className="purecounter"></span>
+              <p><strong>Watch Hours</strong> (Asia) </p>
+            </div>
+            <div className="count-box">
+              <i className="bi bi-globe"></i>
+              <span data-purecounter-start="0" data-purecounter-end="17" data-purecounter-duration="1" className="purecounter"></span>
+              <p><strong>Excellent CTR %</strong> (Asia)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className='services-container'>
+        <h1 className='service-title'>-----------------Service---------------------</h1>
+        <p>Akeshya will serve as your consultant and development partner to help you turn your idea into a reality.</p>
+      </div>
+      
+      <section id="services" className='services'>
+        <div className='service-container'>
+          <div className='service-row'>
+            <i className="bx bxl-dribbble"></i>
+            <h3>Design</h3>
+            <p>
+              Our web design services can assist you in reclaiming your company's online image. Your business will flourish on the Internet thanks to the combination of style and technology we provide, as well as our experience.
+            </p>
+          </div>
+          <div className='service-row'>
+            <i className="bx bx-file"></i>
+            <h3>Development</h3>
+            <p>
+              Our development team can construct platforms to help your business thrive by creating powerful customized solutions tailored to your particular requirements. Akeshya makes use of established and effective web development tools.
+            </p>
+          </div>
+          <div className='service-row'>
+            <i className="bx bx-world"></i>
+            <h3>Marketing</h3>
+            <p>
+              A beautiful website is the foundation of effective marketing. Our customers achieve success where it counts—in the real world—by combining our proven approach with our passion for improving conversions and increasing ROI.
+            </p>
+          </div>
+          <div className='service-row'>
+            <i className="bx bx-tachometer"></i>
+            <h3>Support</h3>
+            <p>
+              Since the beginning, we at Akeshya have specialized in website maintenance. We recognize the significance of having your business online 24 hours a day, seven days a week, and we've created a system to ensure that we're always available.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div className='process'>
+        <h1>OUR PROCESS</h1>
+        <p>Over the years we’ve evolved a tested method for attaining achievement for each one of our clients.</p>
+      </div>
+
+      <section className='process'>
+        <div className='process-container'>
+          <div className='process-row'>
+            <h2>1. Planning</h2>
+            <p>We help you turn all of your ideas into a digital product that meets all of your requirements. We begin each project by determining its scope and needs. This is done by collaborating closely with you to ensure that we're all on the same page.</p>
+          </div>
+          <div className='process-row'>
+            <h2>2. Design</h2>
+            <p>We build our websites carefully through a series of workshops, wire-framing, and user experience (UX) sessions, resulting in a site that reinforces trust, conveys important brand messaging, and provides a return on innovation.</p>
+          </div>
+          <div className='process-row'>
+            <h2>3. Development</h2>
+            <p>We provide extensive front-end and back-end development that allows your idea to stand alone. Our in-house developers work side-by-side with the artistic team to seek out natural breakpoints inside the content and order practicality based on acknowledged statistics.</p>
+          </div>
+          <div className='process-row'>
+            <h2>4. Marketing</h2>
+            <p>We come up with ideas and campaigns to help your business prosper online. Our campaigns and virtual approach have a verified tune report of accomplishing brilliant results, gathering new leads and site visitors in your website and assist them convert.</p>
+          </div>
+        </div>
+      </section>
+
+      <div className='features'>
+        <h1>OUR CORE FEATURES</h1>
+        <p>Akeshya is a forward-thinking and intelligent design firm that is technically and creatively capable of transforming your brand into its best digital self. Our approach to design and development results in compelling, engaging branding and immersive digital experiences that provide a value for money.</p>
+      </div>
+
+      <section className='features'>
+        <div className='features-container'>
+          <div className="features-box">
+            <i className="ri-window-line"></i>
+            <h3><a href="">Web design</a></h3>
+          </div>
+          <div className="features-box">
+            <i className="ri-code-box-line"></i>
+            <h3><a href="">Development</a></h3>
+          </div>
+          <div className="features-box">
+            <i className="ri-creative-commons-by-line"></i>
+            <h3><a href="">Branding</a></h3>
+          </div>
+          <div className="features-box">
+            <i className="ri-play-circle-line"></i>
+            <h3><a href="">Media buying</a></h3>
+          </div>
+          <div className="features-box">
+            <i className="ri-search-eye-line"></i>
+            <h3><a href="">Search engine</a></h3>
+          </div>
+          <div className="features-box">
+            <i className="ri-todo-line"></i>
+            <h3><a href="">Brand strategy</a></h3>
+          </div>
+          <div className="features-box">
+            <i className="ri-map-pin-line"></i>
+            <h3><a href="">Local search marketing</a></h3>
+          </div>
+          <div className="features-box">
+            <i className="ri-bar-chart-grouped-line"></i>
+            <h3><a href="">Lead Tracking & Management</a></h3>
+          </div>
+          <div className="features-box">
+            <i className="ri-contacts-book-line"></i>
+            <h3><a href="">Contact management</a></h3>
+          </div>
+          <div className="features-box">
+            <i className="ri-disc-line"></i>
+            <h3><a href="">Media management</a></h3>
+          </div>
+          <div className="features-box">
+            <i className="ri-calendar-event-line"></i>
+            <h3><a href="">Social scheduling</a></h3>
+          </div>
+          <div className="features-box">
+            <i className="ri-advertisement-fill"></i>
+            <h3><a href="">Ad retargeting</a></h3>
+          </div>
+        </div>
+      </section>
+
+      <div id="contact" className='contact'>
+        <h1>CONTACT US</h1>
+      </div>
+
+      <section className='contact'>
+        <div className='contact-container'>
+          <div className='contact-layout'>
+            <div className='contact-page'>
+              <h2>Akeshya</h2>
+              <p>Designers, developers & marketeers capable of delivering solutions according to your needs,</p>
+            </div>
+          </div>
+          <div className='contact-details'>
+            <div className='contact-info'>
+              <i className="ri-map-pin-line"></i>
+              <p>26-2-789, 7th street, Jyothi Nagar, Nellore, Andhra Pradesh 524004</p>
+            </div>
+            <div className='contact-info'>
+              <i className="ri-mail-send-line"></i>
+              <p>info@akeshya.com</p>
+            </div>
+            <div className='contact-info'>
+              <i className="ri-phone-line"></i>
+              <p>+91 94942 40922</p>
+            </div>
+          </div>
+          <div className='contact-form'>
+            <form onSubmit={handleSubmit}>
+              <div>
+                <input type="text" placeholder="Your Name" required className='contact-form' />
+              </div>
+              <div>
+                <input type="email" placeholder="Your Email" required className='contact-form' />
+              </div>
+              <div>
+                <input type="text" placeholder="Subject" required className='contact-form' />
+              </div>
+              <div>
+                <textarea placeholder="Message" required className='contact-form'></textarea>
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section className="footer">
+        <div className="footer-container">
+          <div className="footer-left">
+            <div className="Copyright">
+              &copy; Copyright <strong>Akeshya</strong>. All Rights Reserved
+            </div>
+          </div>
+          <div className="footer-right">
+            <a href="https://akeshya.com/Terms%20and%20conditions.pdf">Terms and conditions</a>
+            <a href="https://akeshya.com/Refund%20policy.pdf">Refund policy</a>
+            <a href="https://akeshya.com/Privacy%20policy.pdf">Privacy policy</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+export default Home;
+
+
+css
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.left-section {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 20px; /* Adjust this value to your preference */
+  margin-top: 40px;
+}
+
+.profile-image {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.nav-name {
+  font-size: 2em;
+  color: #00008B;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  right: 20px; /* Adjust this value to your preference */
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  margin-left: 20px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2em;
+}
+
+.nav-list li a:hover {
+  color: #007BFF;
+}
+.home-left h1 {
+  color: #00008B; /* Set the color to dark blue */
+  font-size: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+
+}
+
+.home-left p {
+  color: gray;
+  font-size: 25px;
+  margin-right: 100px;
+  margin-left: 100px;
+
+}
+
+.home-left  {
+  max-width: 50%; /* Take up to 50% width of the container */
+  text-align: left; /* Align content to the left */
+}
+
+
+.home-left-button {
+  margin-left: 100px;
+  margin-top: 50px;
+  font-size: 20px;
+  border-radius: 45%;
+  padding: 18px;
+  color: #00008B; /* Dark blue text color */
+  background-color: transparent; /* Transparent background */
+  border: 2px solid #00008B; /* Dark blue border */
+  cursor: pointer; /* Cursor on hover */
+  font-size: bold;
+}
+
+.home-left-button:hover {
+  background-color: #00008B; /* Dark blue background color on hover */
+  color: white; /* White text color on hover */
+}  
+
+.home-image {
+  width: 100%; /* Ensure image fills its container */
+  max-width: 500px; /* Set maximum width for the image */
+  height: auto;
+  animation: moveUpDown 2s infinite alternate ease-in-out; /* Animation added */
+  margin-right: 100px;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-20px); /* Adjust value as needed */
+  }
+}
+
+
+.home-back-images {
+  background-color: whitesmoke;
+  padding-bottom: 20px;
+  padding-left: 20px; /* Increase padding-left to move images to the right */
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 20px;
+
+}
+
+
+/* Adjust margin for the first image */
+.home-image1 {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+  margin-left: 100px;
+}
+.home-back-images img:first-child {
+  margin-left: 5px;
+  margin-right: 1px;
+  text-align: center;
+}
+
+.home-back-images img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+.home-back-images img:first-child {
+  margin-left: 100px;
+}
+.home-back-images img:hover {
+  filter: grayscale(0%);
+}
+
+
+
+
+
+
+.about-container {
+  display: flex; /* Use flexbox for the layout */
+  justify-content: space-between; /* Distribute space between the items */
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px; /* Optional: Add some space between the items */
+  padding: 20px; /* Add padding for better spacing */
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.about-left-side
+{
+  width: 48%; /* Adjust the width as needed to fit side by side */
+  padding: 5px; /* Add padding for better spacing */
+  font-family: Arial, sans-serif; /* Set a default font family */
+  font-size: 18px; /* Set a default font size */
+  line-height: 1.6; /* Improve readability with line height */
+  border-radius: 5px; /* Slightly round the corners */
+  text-align: left;
+  margin-left: 100px;
+  margin-right: 30px;
+}
+
+.about-right-side {
+  width: 48%; /* Adjust the width as needed to fit side by side */
+  padding: 5px; /* Add padding for better spacing */
+  font-family: Arial, sans-serif; /* Set a default font family */
+  font-size: 18px; /* Set a default font size */
+  line-height: 1.6; /* Improve readability with line height */
+  border-radius: 5px; /* Slightly round the corners */
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+.about-right-button {
+  margin-top: 20px; /* Add some space above the button */
+  padding: 16px; /* Button padding */
+  font-size: 18px; /* Font size for the button */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Slightly round the corners */
+  cursor: pointer; /* Change cursor on hover */
+  border-radius: 40%;
+  border: 2px solid #00008B; /* Dark blue border */
+
+}
+
+.about-right-button:hover {
+  background-color: #00008B; /* Dark blue background color on hover */
+  color: white; /* White text color on hover */
+
+}
+  
+
+.home-left-button {
+  margin-left: 100px;
+  margin-top: 50px;
+  font-size: 18px;
+  border-radius: 45%;
+  padding: 18px;
+  color: #00008B; /* Dark blue text color */
+  background-color: transparent; /* Transparent background */
+  border: 2px solid #00008B; /* Dark blue border */
+  cursor: pointer; /* Cursor on hover */
+}
+
+  
+.section-about {
+  display: flex;
+  justify-content: left; /* Center the image horizontally */
+  margin-top: 0px;
+  margin-left: 100px; /* Adjust margin as needed */
+}
+
+.section-about img {
+  width: 500px; /* Set image width */
+  height: 500px; /* Maintain aspect ratio */
+  border-radius: 50%;
+}
+
+.count-box i{
+  border: #00008B;
+  font-size: 50px;
+  margin-right:100px ;
+  margin-left: 100px;
+  color: #00008B;
+  text-align: left;
+  margin-top: 300px;
+
+}
+.count-box {
+  margin-left: 10px;
+  margin-top: 100px;
+  margin-right: 100px;
+  font-size: 20px;
+}
+
+.service-title {
+  font-size: 36px; /* Increase the font size for the service title */
+}
+
+p {
+  font-size: 24px; /* Increase the font size for the paragraph */
+}
+
+.services {
+  padding: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between columns */
+  justify-content: space-between;
+  background-color: white;
+}
+
+.service-row {
+  flex: 1 1 calc(20% - 20px); /* Adjust width to fit three columns with gap */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #f9f9f9; /* Optional: add background for visual separation */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add shadow for visual separation */
+  box-sizing: border-box; /* Ensure padding is included in the width calculation */
+  padding-left: 10px;
+height: 500px;
+margin-right: 30px;
+}
+
+.service-row:hover {
+  background-color:#00008B; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+
+.service-row:hover i {
+  background-color: white; /* Change icon background color on hover */
+  color:#00008B; /* Change icon color on hover */
+}
+
+
+.service-row i {
+  font-size: 24px;
+  margin-bottom: 10px;
+  background-color: #fff; /* Background color for the circle */
+  border: 2px solid #ccc; /* Optional: border color for the circle */
+  border-radius: 50%; /* Make the icon background a circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Diameter of the circle */
+  height: 50px; /* Diameter of the circle */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 50px; /* Optional: shadow for the circle */
+  background-color: #00008B;
+  color: white;
+  padding:15px ;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.service-row h3 {
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.service-row p {
+  margin: 0;
+  font-size: 20px;
+  margin-left: 20px;
+  text-align: left; /* Align content to the left */
+  font-size: 20px;
+  text-align: left;
+  padding-top: 10px;
+  padding-right: 30px;
+}
+
+
+
+
+.process {
+  padding: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.process-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between rows and columns */
+}
+
+.process-row {
+  flex: 1 1 calc(50% - 40px); /* Adjust width to fit two columns with gap, accounting for margins */
+  background: #f9f9f9; /* Optional: add background for visual separation */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0); /* Optional: add shadow for visual separation */
+  box-sizing: border-box; /* Ensure padding is included in the width calculation */
+  margin-top: 200px;
+  height: 300px;
+  margin-right: 30px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.process-row:hover {
+  background-color:#00008B; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+
+.process-row h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.process-row p {
+  margin: 0;
+  font-size: 22px;
+text-align: left;
+margin-left: 20px;
+margin-right:20px ;
+margin-top: 20px;
+}
+
+
+.features {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 20px;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between columns */
+  justify-content: space-between;
+  background-color: white;
+}
+
+.features-box {
+  flex: 1 1 calc(20% - 20px); /* Adjust width to fit columns with gap */
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+  background: #f9f9f9; /* Optional: add background for visual separation */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add shadow for visual separation */
+  box-sizing: border-box; /* Ensure padding is included in the width calculation */
+  padding: 10px;
+  margin-right: 30px;
+}
+
+.features-box i {
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 40px;
+  margin: 20px;
+}
+.ri-code-box-line{
+  color: #5578ff;
+}
+
+.ri-window-line{
+  color: #ffbb2c;
+}
+
+.ri-creative-commons-by-line{
+  color:red;
+}
+
+.ri-play-circle-line{
+  color:#e361ff;
+}
+.ri-search-eye-line{
+  color: rgb(42, 194, 245);
+
+}
+.ri-todo-line{
+  color:  #ffa76e;
+
+}
+.ri-map-pin-line{
+  color: #dbce11;
+
+}
+.ri-bar-chart-grouped-line{
+  color: blue;
+  padding-left: 10px;
+}
+.ri-contacts-book-line{
+  color:#b2904f;
+
+}
+.ri-disc-line{
+  color:#b20969;
+
+}
+
+.ri-calendar-event-line{
+  color: orangered;
+
+}
+.ri-advertisement-fill{
+  color: #29cc61;
+}
+
+
+.page-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh; /* Full viewport height */
+}
+
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:white; /* Light grey background for the first part */
+  text-align: left;
+  margin-left: 100px;
+  margin-right: 100px;
+
+
+}
+
+.contact-page p{
+  font-size: 16px;
+  margin-right: 100px;
+
+}
+
+
+.contact-info i{
+  font-size: 30px;
+  color: #00008B;
+}
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 150px;
+}
+.contact-info p{
+  font-size: 16px;
+}
+
+.contact-details{
+  margin-right: 170px;
+}
+
+
+
+.footer {
+  background-color: #f9f9f9;
+  padding: 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 20px auto; /* Adds margin top and bottom */
+  padding: 10px; /* Adds padding for the border */
+  border: 1px solid #ccc; /* Adds border */
+  border-radius: 5px; /* Adds border radius for styling */
+  display: flex;
+  justify-content: space-between; /* Align items with space between */
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-right a {
+  display: block; /* Ensures each link is displayed on a new line */
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 10px; /* Adds space between links */
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+/* Additional styles for the copyright text */
+.Copyright {
+  font-size: 14px;
+  color: #555;
+}
+
+
